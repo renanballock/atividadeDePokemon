@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .busca {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  #campo-busca {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px 0 0 8px;
+    outline: none;
+  }
+  
+  #botao-busca {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+  }
+  
+  #botao-busca:hover {
+    background-color: #0056b3;
+  }
+  
+  .carregando {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .grade-pokemon {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .cartao-pokemon {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .cartao-pokemon:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cartao-pokemon img {
+    max-width: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .detalhes-pokemon {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .detalhes-pokemon img {
+    max-width: 200px;
+  }
+  
+  .tipo-badge {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 12px;
+  }
+  
+  .tipo-fire { background: #f08030; }
+  .tipo-water { background: #6890f0; }
+  .tipo-grass { background: #78c850; }
+  .tipo-electric { background: #f8d030; }
+  .tipo-ice { background: #98d8d8; }
+  .tipo-fighting { background: #c03028; }
+  .tipo-poison { background: #a040a0; }
+  .tipo-ground { background: #e0c068; }
+  .tipo-flying { background: #a890f0; }
+  .tipo-psychic { background: #f85888; }
+  .tipo-bug { background: #a8b820; }
+  .tipo-rock { background: #b8a038; }
+  .tipo-ghost { background: #705898; }
+  .tipo-dragon { background: #7038f8; }
+  .tipo-dark { background: #705848; }
+  .tipo-steel { background: #b8b8d0; }
+  .tipo-fairy { background: #ee99ac; }

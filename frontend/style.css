@@ -1,0 +1,126 @@
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    margin-bottom:-600px;
+}
+
+#imgheader {
+    transform: translatey(-320px);
+    max-width: 100%;
+    height: auto;
+    width: 200px;
+    margin-bottom: 0px;
+}
+
+#textoheader {
+    transform: translatey(-320px);
+    font-size: xx-large;
+    font-family: 'Fira Code', monospace;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#pesquisa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+#barra-pesquisa {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#botao-pesquisa {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#botao-pesquisa:hover {
+    background-color: #45a049;
+}
+
+#container-pokemon {
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+#cardpokemon {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+#cardpokemon:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.item {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imgpokemon {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+}
+
+.textopokemon {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* footer feito inteiramente pelo chatgpt*/
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #f8f9fa;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer a:hover {
+    color: #dcdcdc;
+    text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+    footer {
+        font-size: 14px;
+    }
+}
